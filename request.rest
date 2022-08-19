@@ -1,0 +1,43 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgwODgyOCwiZXhwIjoxNjYwODA4ODQzfQ.nWl5DI2_YawiiIhViYEJFn3QA-hgDcxGAC4bP6AUjPw
+
+
+###
+GET http://localhost:5000/registers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxMDE0MiwiZXhwIjoxNjYwODEwMTU3fQ.JCCN6OAEriHcboENEA9Jdl01oFPHm26YE8QPmC_7xvE
+
+
+
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxNzI5MSwiZXhwIjoxNjYwODE3MzExfQ.ILsYl2QWBDavtVW2g2kBqAmc9h3iJIoyoxAKk3KaSAY
+
+{
+    "name" : "screw88",
+    "email" : "screw88@gmail.com",
+    "password" : "12345",
+    "confPassword" : "12345"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "screw44@gmail.com",
+    "password" : "12345"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+###
+
+DELETE http://localhost:5000/logout
+
+
