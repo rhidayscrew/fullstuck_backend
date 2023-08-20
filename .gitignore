@@ -1,0 +1,14 @@
+# Mengabaikan file sistem Mac
+.DS_store
+
+# Mengabaikan folder node_modules
+node_modul
+
+# Mengabaikan semua ekstensi file txt
+*.txt
+
+# Mengabaikan file yang terkait dengan API key
+.env
+
+# Mengabaikan file konfigurasi SASS
+.sass-cache
