@@ -1,0 +1,74 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NzkxNDI4MHJlZ2lzdGVyIiwibmFtZSI6InNjcmV3OTkiLCJlbWFpbCI6InNjcmV3OTlAZ21haWwuY29tIiwiaWF0IjoxNjkyNTEzNjk5LCJleHAiOjE2OTI1MTM3MTl9.MyXW4OX_fW27o-dySnpvxJz67DyVFUZcCkb93UiQ44A
+
+
+###
+GET http://localhost:5000/registers
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxMDE0MiwiZXhwIjoxNjYwODEwMTU3fQ.JCCN6OAEriHcboENEA9Jdl01oFPHm26YE8QPmC_7xvE
+
+
+
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxNzI5MSwiZXhwIjoxNjYwODE3MzExfQ.ILsYl2QWBDavtVW2g2kBqAmc9h3iJIoyoxAKk3KaSAY
+
+{
+    "name" : "screw11",
+    "email" : "screw11@gmail.com",
+    "password" : "123456",
+    "confPassword" : "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "screw99@gmail.com",
+    "password" : "123456"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+//product
+###
+GET http://localhost:5000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxNzI5MSwiZXhwIjoxNjYwODE3MzExfQ.ILsYl2QWBDavtVW2g2kBqAmc9h3iJIoyoxAKk3KaSAY
+
+
+###
+GET http://localhost:5000//products/:id
+
+
+###
+POST http://localhost:5000/products
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxNzI5MSwiZXhwIjoxNjYwODE3MzExfQ.ILsYl2QWBDavtVW2g2kBqAmc9h3iJIoyoxAKk3KaSAY
+{
+    "name" : "screw11",
+    "harbeli" : "4",
+    "harjul" : "6",
+    "stok" : "7",
+    "file" : ""
+}
+
+
+###
+PATCH  http://localhost:5000/products/:id
+
+###
+DELETE http://localhost:5000/products/:id
+
+//Product END
+
+###
+
+DELETE http://localhost:5000/logout
+
+
