@@ -111,6 +111,13 @@ export const saveProduct = async (req, res) => {
         message: "Harga jual produk harus lebih tinggi daripada harga beli",
       });
     }
+    if (!stok || isNaN(stok) || stok <= 0) {
+      return res.status(422).json({
+        code: "422",
+        status: "Bad Request",
+        message: "Stok produk harus diisi dengan angka lebih dari 0",
+      });
+    }
 
     await Product.create({
       name: name,
@@ -224,7 +231,7 @@ export const updateProduct = async (req, res) => {
       });
     }
 
-    if (!stok || stok <= 0) {
+    if (!stok || isNaN(stok) || stok <= 0) {
       return res.status(422).json({
         code: "422",
         status: "Bad Request",
