@@ -39,7 +39,10 @@ GET http://localhost:5000/token
 //product
 ###
 GET http://localhost:5000/products
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJzY3JldzQ0IiwiZW1haWwiOiJzY3JldzQ0QGdtYWlsLmNvbSIsImlhdCI6MTY2MDgxNzI5MSwiZXhwIjoxNjYwODE3MzExfQ.ILsYl2QWBDavtVW2g2kBqAmc9h3iJIoyoxAKk3KaSAY
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3NzkxNDI4MHJlZ2lzdGVyIiwibmFtZSI6InNjcmV3OTkiLCJlbWFpbCI6InNjcmV3OTlAZ21haWwuY29tIiwiaWF0IjoxNjkyNTIxMjc1LCJleHAiOjE2OTI1MjEyOTV9.PvDG0wfyOBHpcREq_oQqwsr1B2oi8zCtveDjsAtX5mo
+
+
+
 
 
 ###
